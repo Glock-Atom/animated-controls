@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controls</title>
+    
+</head>
+<body>
+
+    <div class="controls">
+        <div class="controls__button" data-up>
+            <i data-feather="chevron-up"></i>
+        </div>
+        <div class="controls__wrapper">
+            <div class="controls__button" data-left>
+                <i data-feather="chevron-left"></i>
+            </div>
+            <div class="controls__button" data-down>
+                <i data-feather="chevron-down"></i>
+            </div>
+            <div class="controls__button" data-right>
+                <i data-feather="chevron-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

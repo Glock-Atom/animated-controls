@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background: #06020f;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls__wrapper{
+    display: flex;
+}
+
+.controls__button{
+    border-radius: 0.2rem;
+    margin: 0.2rem;
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.02);
+    display: grid;
+    place-items: center;
+
+    transition: background 0.2s;
+}
+
+.controls__button svg{
+    width: 1.6rem;
+    height: 1.6rem;
+    stroke: rgba(255, 255, 255, 0.3);
+    transition: stroke  0.2s;
+}
+
+.controls__button.controls--active svg{
+    stroke: rgba(255, 255, 255, 0.6);
+}
